@@ -12,22 +12,43 @@
 <h:body>
 	<div align="center">
 		<h:dataTable value="#{bAluno.listagem}" var="objAluno">
+			<f:facet name="header">
+				<h:outputText value="Alunos Matriculados" />
+			</f:facet>
 			<h:column>
+				<f:facet name="footer">
+					<h:outputText value="Matricula" />
+				</f:facet>
 				<h:outputLabel value="#{objAluno.matricula}" />
 			</h:column>
 			<h:column>
+				<f:facet name="footer">
+					<h:outputText value="Nome" />
+				</f:facet>
 				<h:outputLabel value="#{objAluno.nome}" />
 			</h:column>
 			<h:column>
+				<f:facet name="footer">
+					<h:outputText value="Idade" />
+				</f:facet>
 				<h:outputLabel value="#{objAluno.idade}" />
 			</h:column>
 			<h:column>
+				<f:facet name="footer">
+					<h:outputText value="Sexo" />
+				</f:facet>
 				<h:outputLabel value="#{objAluno.sexo}" />
 			</h:column>
 			<h:column>
+				<f:facet name="footer">
+					<h:outputText value="Peso" />
+				</f:facet>
 				<h:outputLabel value="#{objAluno.peso}" />
 			</h:column>
 			<h:column>
+				<f:facet name="footer">
+					<h:outputText value="Altura" />
+				</f:facet>
 				<h:outputLabel value="#{objAluno.altura}" />
 			</h:column>
 		</h:dataTable>
